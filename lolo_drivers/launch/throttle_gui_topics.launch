@@ -1,0 +1,21 @@
+<launch>
+
+    <node pkg="topic_tools" type="throttle" name="throttle_lat_lon"
+        args="messages /lolo/dr/lat_lon 1.0 /lolo/dr/lat_lon/throttled"/>
+
+    <node pkg="topic_tools" type="throttle" name="throttle_roll"
+        args="messages /lolo/dr/roll 1.0 /lolo/dr/roll/throttled"/>
+
+    <node pkg="topic_tools" type="throttle" name="throttle_pitch"
+        args="messages /lolo/dr/pitch 1.0 /lolo/dr/pitch/throttled"/>
+
+    <node pkg="topic_tools" type="throttle" name="throttle_yaw"
+        args="messages /lolo/dr/yaw 1.0 /lolo/dr/yaw/throttled"/>
+
+    <node pkg="topic_tools" type="throttle" name="throttle_thruster1"
+        args="messages /lolo/core/thruster1_fb 1.0 /lolo/core/thruster1_fb/throttled"/>
+
+    <node pkg="topic_tools" type="throttle" name="throttle_thruster2"
+        args="messages /lolo/core/thruster2_fb 1.0 /lolo/core/thruster2_fb/throttled"/>
+
+</launch>
